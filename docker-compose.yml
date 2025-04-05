@@ -1,0 +1,14 @@
+services: 
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    container_name: react-dev-interview-2025-web-cont
+    ports:
+      - '3006:3006'
+    volumes:
+      - .:/react_dev_interview_march_2025
+      - /react_dev_interview_march_2025/node_modules
+    stdin_open: true

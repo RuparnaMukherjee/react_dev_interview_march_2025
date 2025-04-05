@@ -1,0 +1,1 @@
+sudo docker exec -it react-dev-interview-2025-web-cont /bin/bash
